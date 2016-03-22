@@ -1,0 +1,20 @@
+﻿<Window x:Class="TP2_1._0.Connexion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="142" Width="226" ResizeMode="NoResize">
+    <Grid FocusManager.FocusedElement="{Binding ElementName=textboxUtilisateur}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="textblockMessageErreur"  Grid.Row="0" Grid.ColumnSpan="2" Margin="10" TextAlignment="Center"/>
+        <Label Name="labelUtilisateur" Grid.Row="1" Grid.Column="0" Content="Utilisateur" Padding="-5" Margin="10,0,0,0"/>
+        <TextBox Name="textboxUtilisateur" Grid.Row="1" Grid.Column="1" Margin="10,0,10,0"/>
+        <Button Name="boutonConnexion" Grid.Row="2" Grid.Column="1" Content="Connexion" Margin="10" Padding="5" Click="boutonConnexion_Click"/>
+    </Grid>
+</Window>
